@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <title>University Course Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav id="nav">
+            <h1>Welcome To Course Registration ♡</h1>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section">
+
+            <div class="courses">
+                <h2>Web Development</h2>
+                <p>Learn HTML, CSS, and JavaScript to build modern websites.</p>
+                <span>Duration: 6 weeks</span>
+
+                <div class="both-btns">
+                    <a href="#" class="learn">Learn More</a>
+                    <a href="#" class="enroll">Enroll Now</a>
+                </div>
+            </div>
+
+            <div class="courses">
+                <h2>Mobile Application Development</h2>
+                <p>Learn to develop mobile applications for Android devices.</p>
+                <span>Duration: 12 weeks</span>
+
+                <div class="both-btns">
+                    <a href="#" class="learn">Learn More</a>
+                    <a href="#" class="enroll">Enroll Now</a>
+                </div>
+            </div>
+
+            <div class="courses">
+                <h2>Database Management</h2>
+                <p>Understand database designs, SQL queries, and data management.</p>
+                <span>Duration: 10 weeks</span>
+
+                <div class="both-btns">
+                    <a href="#" class="learn">Learn More</a>
+                    <a href="#" class="enroll">Enroll Now</a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <h2>Join Our Courses ♡</h2>
+
+        <form action="/submit-form-endpoint" method="POST">
+
+            <div>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName"
+                    placeholder="John Doe" required>
+            </div>
+
+            <div>
+                <label for="userEmail">Email Address:</label>
+                <input type="email" id="userEmail" name="userEmail"
+                    placeholder="you@example.com" required>
+            </div>
+
+            <div>
+                <label for="userPassword">Password:</label>
+                <input type="password" id="userPassword"
+                    name="userPassword" required>
+            </div>
+
+            <button type="submit">Submit Registration ♡</button>
+
+        </form>
+    </footer>
+
+</body>
+</html>

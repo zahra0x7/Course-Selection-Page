@@ -1,0 +1,403 @@
+
+/* ==============================
+   GENERAL STYLING
+   ============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #be92a2;
+    min-height: 100vh;
+    color: #4d293b;
+}
+
+
+/* ==============================
+   1. ELEMENT SELECTORS
+   ============================== */
+
+h1, h2 {
+    color: #613c58;
+}
+
+p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: #4d293b;
+}
+
+
+/* ==============================
+   2. ID SELECTOR - WELCOME BANNER
+   ============================== */
+
+#nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #dbbadd;
+    color: #613c58;
+
+    padding: 2rem;
+    min-height: 130px;
+    text-align: center;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#nav h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+
+/* ==============================
+   3. COURSE SECTION
+   ============================== */
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    padding: 2rem 5%;
+}
+
+
+/* ==============================
+   4. CLASS SELECTORS - COURSE CARDS
+   ============================== */
+
+.courses {
+    background-color: #be92a2;
+    border: 2px solid #895d70;
+    border-radius: 18px;
+
+    padding: 1.5rem;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+
+    box-shadow: 0 6px 15px rgba(76, 36, 54, 0.15);
+
+    transition: transform 0.3s ease;
+}
+
+/* Course descriptions */
+
+.courses p {
+    color: #4d293b;
+    font-size: 0.9rem;
+}
+
+/* Course duration */
+
+.courses span {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #653e51;
+}
+
+
+/* ==============================
+   5. ATTRIBUTE SELECTORS
+   ============================== */
+
+/* Links opening in a new tab */
+
+a[target="_blank"] {
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+/* Text input */
+
+input[type="text"] {
+    padding: 12px;
+    border: 1px solid #b58ba9;
+    border-radius: 9px;
+    background-color: #fff8fc;
+    font-family: inherit;
+}
+
+/* Email input */
+
+input[type="email"] {
+    padding: 12px;
+    border: 1px solid #b58ba9;
+    border-radius: 9px;
+    background-color: #fff8fc;
+    font-family: inherit;
+}
+
+/* Password input */
+
+input[type="password"] {
+    padding: 12px;
+    border: 1px solid #b58ba9;
+    border-radius: 9px;
+    background-color: #fff8fc;
+    font-family: inherit;
+}
+
+
+/* ==============================
+   6. PSEUDO-CLASS SELECTORS
+   ============================== */
+
+/* Hover effect on course cards */
+
+.courses:hover {
+    transform: translateY(-5px);
+}
+
+/* Different color for the second card */
+
+.courses:nth-child(2) {
+    background-color: #d4aaba;
+    border-color: #70445d;
+}
+
+/* Hover effect on buttons */
+
+.both-btns a:hover {
+    transform: translateY(-3px);
+    opacity: 0.85;
+}
+
+
+/* ==============================
+   7. PSEUDO-ELEMENT SELECTOR
+   ============================== */
+
+/* Decorative line after course headings */
+
+.courses h2::after {
+    content: "";
+    display: block;
+
+    width: 45px;
+    height: 3px;
+
+    background-color: #70445d;
+    border-radius: 5px;
+
+    margin-top: 8px;
+}
+
+
+/* ==============================
+   8. CONTEXTUAL SELECTORS
+   ============================== */
+
+/* Descendant selector */
+
+.courses div {
+    gap: 12px;
+}
+
+/* Direct child selector */
+
+.courses > h2 {
+    font-size: 1.2rem;
+    color: #572d43;
+}
+
+/* Adjacent sibling selector */
+
+.courses h2 + p {
+    color: #542e4c;
+    margin-top: 3px;
+}
+
+
+/* ==============================
+   9. COURSE BUTTONS
+   ============================== */
+
+.both-btns {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+
+    margin-top: 8px;
+}
+
+/* Both buttons have equal sizing */
+
+.both-btns a {
+    flex: 0 0 auto;
+
+    text-align: center;
+    padding: 9px 16px;
+
+    border-radius: 10px;
+    font-size: 0.8rem;
+    font-weight: 500;
+
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+/* Learn More button */
+
+.learn {
+    background-color: #dbbadd;
+    color: #542e4c;
+}
+
+/* Enroll Now button */
+
+.enroll {
+    background-color: #70445d;
+    color: white;
+}
+
+
+/* ==============================
+   10. FOOTER - REGISTRATION FORM
+   ============================== */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 2rem;
+    margin: 1rem auto 3rem;
+
+    width: min(90%, 450px);
+
+    background-color: #dbbadd;
+    border: 2px solid #895d70;
+    border-radius: 20px;
+
+    box-shadow: 0 6px 18px rgba(76, 36, 54, 0.15);
+}
+
+footer h2 {
+    margin-bottom: 1.5rem;
+}
+
+/* Form layout */
+
+form {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Form input containers */
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* Labels */
+
+form label {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #542e4c;
+}
+
+/* Input focus effect */
+
+form input:focus {
+    outline: none;
+    border-color: #70445d;
+
+    box-shadow: 0 0 0 3px rgba(112, 68, 93, 0.12);
+}
+
+/* Submit button */
+
+form button {
+    padding: 12px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #70445d;
+    color: white;
+
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: 500;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+form button:hover {
+    background-color: #512e43;
+}
+
+
+/* ==============================
+   11. CSS CASCADING
+   ============================== */
+
+/*
+   CSS Cascade Demonstration:
+
+   The paragraph inside a course card is targeted by:
+
+   1. p
+      Element selector.
+
+   2. .courses p
+      Class + element selector.
+
+   3. .courses h2 + p
+      Class + adjacent sibling + element selector.
+
+   These selectors have increasing specificity.
+
+   The more specific selector overrides conflicting
+   properties from the less specific selectors.
+
+   Similarly, #nav h1 has higher specificity than h1
+   because it contains an ID selector.
+
+   CSS specificity determines which conflicting
+   declaration takes priority.
+*/
+
+
+/* ==============================
+   12. RESPONSIVE DESIGN
+   ============================== */
+
+@media (max-width: 768px) {
+
+    .section {
+        padding: 2rem 5%;
+    }
+
+    .courses {
+        width: 100%;
+    }
+
+    #nav h1 {
+        font-size: 1.3rem;
+    }
+
+    footer {
+        width: 90%;
+    }
+}
