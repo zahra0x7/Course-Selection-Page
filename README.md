@@ -2,6 +2,10 @@
 
 A simple university course selection page made using HTML and CSS.
 
+## **Live Demo**
+
+[Course Selection Page](https://course-selection-page.netlify.app/?utm_source=chatgpt.com)
+
 ## About the Project
 
 This project displays three university courses with their descriptions, durations, and registration buttons. It also includes a registration form where users can enter their personal details.
